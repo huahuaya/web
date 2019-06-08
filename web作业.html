@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web作业</title>
+        <style>
+        	*{
+        		padding:0;
+        		margin:0;
+        	}
+        	ul, ol, li{
+        		list-style:none;
+        	}
+        	a{
+        		text-decoration:none;
+        	}
+        	.headerwrap{
+        		height:31px;
+        		background-color:#f4f4f4;
+        	}
+        	.header{
+        		height:31px;
+        		width:1200px;
+        		background-color:#f4f4f4;
+        		margin:0 auto;
+        	}
+        	.header p{
+        		font-size:12px;
+        		font-family:"微软雅黑";
+        		line-height:30px;
+        	}
+        	.header img{
+        		vertical-align:middle;
+        	}
+        	.header a{
+        		color:black;
+        	}
+        	.danghang{
+        		height:158px;
+        		background-color:#fff;
+        	}
+        	.nav{
+        		height:158px;
+        		width:1200px;
+        		margin:0 auto;
+        	}
+        	.nav img{
+        		margin-top:20px;
+        	}
+        	.kuang{
+        		margin-top:-60px;
+        		margin-left:360px;
+        	}
+        	.wenben{
+        		width:405px;
+        		height:40px;
+        		border:2px solid #f83838;
+        		font-family:"微软雅黑";
+        		color:#eaeaea;
+        	}
+        	.sousuo{
+        		width:85px;
+        		height:44px;
+        		background-color:#f83838;
+        		border:2px solid #f83838;
+        		margin-left:-8px;
+        		font-family:"微软雅黑";
+        		color:#f5f5f5;
+        	}
+        	.shopping{
+        		font-size:14px;
+        		margin-top:-44px;
+        		width:150px;
+        		height:44px;
+        		background-color:#f5f5f5;
+        		float:right;
+        		border:1px solid #f5f5f5;
+        		font-family:"微软雅黑";
+        		
+        	}
+        	.shopping a{
+        		color:red;
+        	}
+        	.shopping img{
+        		margin-top:12px;
+        		margin-left:22px;
+        	}
+        	.cc{
+        		display:inline-block;
+        		float:left;
+        		margin-left:76px;
+        		font-family:"微软雅黑";
+        		font-size:16px;
+        		margin-top:25px;
+        	}
+        	.choice a{
+        		color:#333333;
+        	}
+        	a.aa:hover{
+        		width:83px;
+        		height:28px;
+        		background-color:#fd0304;
+        		border-radius:4px;
+        		border-color:#fd0304; 
+        		text-align:center;
+        		line-height:28px;
+        		margin-top:22px;
+        	}
+        	a.aa:hover{
+        		color:white;
+        	}
+        	.fenjie{
+        		height:2px;
+        		background-color:#fd0304;
+        		margin-top:-15px;
+        	}
+        	.zhuye{
+        		position:relative;
+        		height:653px;
+        		background-color:#fbfbfb;
+        	}
+        	.neirong{
+        		height:653px;
+        		width:1200px;
+        		margin:0 auto;
+        	}
+        	.narrow{
+        		font-family:"微软雅黑";
+        		font-size:14px;
+        	}
+        	.fenlei{
+        		position:relative;
+        		margin-top:50px;
+        		width:214px;
+        		height:40px;
+        		background-color:#ffffff;
+        		float:left;
+        		font-family:"微软雅黑";
+        	}
+        	.fen a{
+        		color:#333333;
+        		text-align:center;
+
+        	}
+        	.fen img{
+        		margin:13px 22px 13px 34px;
+        		vertical-align:middle;
+        	}
+        	.hcy{
+        		position:relative;
+        		width:214px;
+        		height:494px;
+                background-color:#ffffff;
+                float:left;
+                margin-top:10px;
+        	}
+        	.hcy a{
+        		color:#333333;
+        	}
+        	.hcy1 a{
+        		color:#fd0304;
+        		padding-left:75px;
+        	}
+        	.hcy2 a{
+        		padding-left:75px;
+        	}
+        	.right{
+        		width:965px;
+        		height:548px;
+        		background-color:#ffffff;
+        		float:right;
+        		margin-top:105px;
+        	}
+        	.right1 li{
+        		margin-top:10px;
+        		position:relative;
+        		width:220px;
+        		height:255px;
+        		border:2px solid #f5f5f5;
+        		float:left;
+        		margin-left:12px;
+        		margin-bottom:2px;
+        		text-align:center;
+        	}
+        	.right2 li{
+        		position:relative;
+        		margin-top:12px;
+        		width:220px;
+        		height:255px;
+        		border:2px solid #f5f5f5;
+        		float:left;
+        		margin-left:12px;
+        		margin-bottom:2px;
+        		text-align:center;
+        	}
+        	.right1 img{
+        		margin-top:29px;
+        	}
+        	.ha{
+        		font-family:"微软雅黑";
+        		font-size:16px;
+        		color:#a3a3a3;
+        		margin-top:18px;
+        	}
+        	.he{
+        		font-family:"微软雅黑";
+        		font-size:16px;
+        		color:#333;
+        		margin-top:8px;
+        	}
+        	.right2 img{
+        		margin-top:29px;
+        	}
+        	.list{
+        		height:180px;
+        		background-color:#2e2e2e;
+        	}
+        	.zhuti{
+        		width:1200px;
+        		height:180px;
+        		background-color:#2e2e2e;
+                margin:0 auto;
+        	}
+           .zhuti ul{
+              display:inline-block;
+            }
+        	.end li{
+                position:relative;
+                width:96px;
+                height:40px;
+                font-family:"微软雅黑";
+                font-size:16px;
+                margin-left:160px;
+        	}
+        	.end a{
+        		color:white;
+        	}
+            .line1{
+                height:2px;
+                background-color:#2e2e2e;
+            }
+            .line{
+              width:1200px;
+              height:2px;
+              background-color:#9e9e9e;
+              margin:0 auto;
+             }
+             .zhushi1{
+                position:relative;
+                height:97px;
+                background-color:#2e2e2e;
+             }
+             .zhushi{
+                height:97px;
+                width:1200px;
+                background-color:#2e2e2e;
+                font-family:"微软雅黑";
+                margin:0 auto;
+                font-size:14px;
+             }
+             .zhushi a{
+                color:#fff;
+             }
+             .hh li{
+                margin-left:1px;
+                display:inline-block;
+                padding-top:20px;
+             }
+             .yy{
+                text-align:center;
+                font-family:"微软雅黑";
+                color:#fff;
+                font-size:14px;
+                margin-top:7px;
+             }
+        </style>
+            
+    </head>
+    <body>
+    	<div class="headerwrap">
+    		<div class="header">
+    			<p>
+    				<a href="#">我的收藏</a>
+    				&nbsp;  
+    				<a href="#">E族之家手机版</a>
+    				&nbsp;
+    			<span>
+    				<img src="QQ.png" alt="qq">
+    				328203328
+    			</span>
+     			    <a href="#" style="float:right">注册</a>
+     			    <a  style="float:right"> | </a>
+     			    <a href="#" style="float:right">请登录</a> 
+     			    <a href="#" style="float:right">扫描加入  欢迎来到E族之家， </a>
+    		  	</p>
+    		</div>
+    	</div>
+    	<div class="daohang">
+    		<div class="nav">
+    		  <img src="图层 59.jpg" alt="图层">
+    		   <div class="kuang">
+    		     <input type="text" name="文本框" value="&nbsp;&nbsp;请输入关键词！" class="wenben">
+    		     <input type="submit" value="搜索" class="sousuo">
+    		   </div>
+    		 <p class="shopping">
+    		 	<img src="购物车.png">
+    		 	<span>购物车(<a href="#">0</a>)件</span>
+    		 </p>
+    		 <ul class="choice">
+    		 	<li style="margin-left:32px" class="cc"><a href="#" class="aa">首页</a></li>
+    		 	<li class="cc"><a href="#" class="aa">E族生活</a></li>
+    		 	<li class="cc"><a href="#" class="aa">E族服务</a></li>
+    		 	<li class="cc"><a href="#" class="aa">E族爱心</a></li>
+    		 </ul>
+       	    </div>
+    	</div>
+    	<div class="fenjie">
+    	</div>
+    	<div class="zhuye">
+    		<div class="neirong">
+    			<div class="right">
+    		  		<ul class="right1">
+    		  			<li>
+    		  				<img src="辣椒.jpg" a href="#">
+    		  				<p class="ha">精品辣椒100g</p>
+    		  				<p class="he">¥90.00</p>
+
+    		  			</li>
+    		  			<li>
+    		  				<img src="百香果.jpg" a href="#">
+    		  				<p class="ha">特级百香果3斤</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  			<li>
+    		  				<img src="酒.jpg" a href="#" style="margin-top:13px">
+    		  				<p class="ha">万威啤酒500ml</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  			<li>
+    		  				<img src="松子.jpg" a href="#" style="margin-top:13px">
+    		  				<p class="ha">万威啤酒500ml</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  		</ul>
+    		  		<ul class="right2">
+    		  			<li>
+    		  				<img src="辣椒.jpg" a href="#">
+    		  				<p class="ha">精品辣椒100g</p>
+    		  				<p class="he">¥90.00</p>
+
+    		  			</li>
+    		  			<li>
+    		  				<img src="百香果.jpg" a href="#">
+    		  				<p class="ha">特级百香果3斤</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  			<li>
+    		  				<img src="酒.jpg" a href="#" style="margin-top:13px">
+    		  				<p class="ha">万威啤酒500ml</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  			<li>
+    		  				<img src="松子.jpg" a href="#" style="margin-top:13px">
+    		  				<p class="ha">万威啤酒500ml</p>
+    		  				<p class="he">¥90.00</p>
+    		  			</li>
+    		  		</ul>
+    		  	</div> 
+    			<p class="narrow" style="padding-top:35px ">当前位置：E族爱心>食品</p>
+    		   <div class="fenlei">
+    		   <p class="fen">
+    			<img src="分类.jpg" alt="分类">
+    			<span><a href="#">全部分类</a></span>
+    		 </p>
+    		  <div class="hcy">
+    		  	<p class="hcy1" style="padding-top: 20px"><a href="#">>食品</a></p>
+    		  	<p class="hcy2" style="padding-top: 62px"><a href="#">>生活用品</a></p>
+    		  	
+    		  </div>
+    		 </div>
+    		</div>
+    	</div>
+    	<div class="list">
+    		<div class="zhuti">
+    			<ul class="end">
+    				<li style="margin-left:22px;padding-top:20px"><a href="#">新手上路</a></li>
+                    <li style="margin-left:22px"><a href="#">售后流程</a></li>
+                    <li style="margin-left:22px"><a href="#">购物流程</a></li>
+    				<li style="margin-left:22px"><a href="#">订购方式</a></li>
+                </ul>
+                <ul class="end">
+                    <li style="padding-top:20px"><a href="#">配送方式</a></li>
+                    <li><a href="#">货到付款区域</a></li>
+                    <li><a href="#">配送支付查询</a></li>
+                    <li><a href="#">支付方式说明</a></li>
+            </ul>
+            <ul class="end">
+                    <li style="padding-top:20px"><a href="#">购物指南</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">订购流程</a></li>
+                    <li><a href="#">注册新会员</a></li>
+            </ul>
+            <ul class="end">
+                    <li style="padding-top:20px"><a href="#">售后服务</a></li>
+                    <li><a href="#">退换货原则</a></li>
+                    <li><a href="#">售后服务保证</a></li>
+                    <li><a href="#">换货流程</a></li>
+            </ul>
+             <ul class="end">
+                    <li style="padding-top:20px"><a href="#">关于我们</a></li>
+                    <li><a href="#">网站故障报告</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">投诉与建议</a></li>
+            </ul>
+    	  </div>
+    	</div>
+        <div class="line1">
+            <div class="line">
+            </div>
+        </div>
+        <div class="zhushi1">
+            <div class="zhushi">
+                <div class="hh">
+                    <li style="padding-left:320px"><a href="#">E族生活 |</a></li>
+                    <li><a href="#">居家维修保养 |</a></li>
+                    <li><a href="#">住宿优惠信息 |</a></li>
+                    <li><a href="#">出行接送 |</a></li>
+                    <li><a href="#">E族活动 |</a></li>
+                    <li><a href="#">E族爱心 |</a></li>
+                    <li><a href="#">积分商城</a></li>
+                    <p class="yy">©2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
